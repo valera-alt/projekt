@@ -27,6 +27,7 @@ class Fraktal :
         pendown()
 
     def draw_fratal(self, x, y, a):
+        screensize(5000,5000)
         tracer(10, 0)
         ht()
         pensize(self.width)
@@ -61,8 +62,8 @@ class Fraktal :
 
 
 
-a = Fraktal(10,3,90)
-a.rules_fraktal('F-F-F-F',(("F", "F+S-FF+F+FF+FS+FF-S+FF-F-FF-FS-FFF"), ('S', 'SSSSSS')),2)
+a = Fraktal(4,1,90)
+a.rules_fraktal('F-F-F-F',(("F", "F+S-FF+F+FF+FS+FF-S+FF-F-FF-FS-FFF"), ('S', 'SSSSSS')),3)
 
 
 a.draw_fratal(0,200,0)
